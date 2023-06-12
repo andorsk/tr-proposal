@@ -4,7 +4,7 @@ This is sample code for the trust registry proposal to be presented to Trust
 Over IP on June 15 by Andor Kesselman. It is slated as a WIP, and intended to
 spark discussion, not being a hard unmovable anchor.
 
-**STATUS** STRAWMAN
+**STATUS** DISCUSSION
 
 The presentation is here: [slides](https://docs.google.com/presentation/d/1H31sr0JICoNfChTN2F6eNAmaEHeqwTpK9ukwe7CCjm8/edit)
 
