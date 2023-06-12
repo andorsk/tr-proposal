@@ -1,0 +1,84 @@
+{
+  "@context": {
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+
+    "alsoKnownAs": {
+      "@id": "https://www.w3.org/ns/activitystreams#alsoKnownAs",
+      "@type": "@id"
+    },
+    "assertionMethod": {
+      "@id": "https://w3id.org/security#assertionMethod",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "authentication": {
+      "@id": "https://w3id.org/security#authenticationMethod",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "capabilityDelegation": {
+      "@id": "https://w3id.org/security#capabilityDelegationMethod",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "capabilityInvocation": {
+      "@id": "https://w3id.org/security#capabilityInvocationMethod",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "controller": {
+      "@id": "https://w3id.org/security#controller",
+      "@type": "@id"
+    },
+    "keyAgreement": {
+      "@id": "https://w3id.org/security#keyAgreementMethod",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "service": {
+      "@id": "https://www.w3.org/ns/did#service",
+      "@type": "@id",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "serviceEndpoint": {
+          "@id": "https://www.w3.org/ns/did#serviceEndpoint",
+          "@type": "@id",
+          "@context": {
+            "id": "@id",
+            "profile": "https://trustoverip.org/ns/did#service"
+          }
+        }
+      }
+    },
+    "verificationMethod": {
+      "@id": "https://w3id.org/security#verificationMethod",
+      "@type": "@id"
+    }
+  },
+  "id": "did:example:123456789abcdefghi",
+  "verificationMethod": [
+    {
+      "id": "did:example:123456789abcdefghi#keys-1",
+      "type": "Ed25519VerificationKey2018",
+      "controller": "did:example:123456789abcdefghi",
+      "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
+    }
+  ],
+  "service": [
+    {
+      "id": "did:example:123456789abcdefghi#trust-registry",
+      "type": "TrustRegistry",
+      "profile": ["https://trustoverip/profiles/basic_profile"],
+      "serviceEndpoint": "https://tr.example.com/8377464"
+    },
+    {
+      "id": "did:example:123456789abcdefghi#messages",
+      "type": "MessagingService",
+      "serviceEndpoint": "https://example.com/messages/8377464"
+    }
+  ]
+}

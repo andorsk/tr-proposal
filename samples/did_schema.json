@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "id": {
+      "type": "string"
+    },
+    "authentication": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "controller": {
+              "type": "string"
+            },
+            "publicKeyMultibase": {
+              "type": "string"
+            }
+          },
+          "required": ["id", "type", "controller", "publicKeyMultibase"]
+        }
+      ]
+    },
+    "capabilityInvocation": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "controller": {
+              "type": "string"
+            },
+            "publicKeyMultibase": {
+              "type": "string"
+            }
+          },
+          "required": ["id", "type", "controller", "publicKeyMultibase"]
+        }
+      ]
+    },
+    "capabilityDelegation": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "controller": {
+              "type": "string"
+            },
+            "publicKeyMultibase": {
+              "type": "string"
+            }
+          },
+          "required": ["id", "type", "controller", "publicKeyMultibase"]
+        }
+      ]
+    },
+    "assertionMethod": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "controller": {
+              "type": "string"
+            },
+            "publicKeyMultibase": {
+              "type": "string"
+            }
+          },
+          "required": ["id", "type", "controller", "publicKeyMultibase"]
+        }
+      ]
+    },
+    "services": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "serviceEndpoint": {
+              "type": "string"
+            },
+            "profile": {
+              "type": "string"
+            }
+          },
+          "required": ["id", "type", "serviceEndpoint"]
+        }
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "id",
+    "authentication",
+    "capabilityInvocation",
+    "capabilityDelegation",
+    "assertionMethod"
+  ]
+}

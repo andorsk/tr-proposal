@@ -1,0 +1,20 @@
+{
+  "@context": "https://trustoverip.com/context/profiles/v1",
+  "title": "Simple Profile",
+  "allowable_transports": "http",
+  "version": "v1.0.0",
+  "operations_supported": {
+    "query": {
+      "trust_registry": {
+        "description": "Allows querying to get an answer if this Trust Registry has a trust relationship with the identified Trust Registry. If one exists the returned status provides indicator of the trust relationship.",
+        "content_format": "application/json",
+        "schema": {
+          "type": "array",
+          "items": {
+            "$ref": "https://link-to-did-documenthere"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "title": "http://schema.org/title",
+    "allowable_transports": {
+      "@id": "https://trustoverip.com/context/profiles/v1/allowable_transports",
+      "@type": "@id"
+    },
+    "version": {
+      "@id": "https://trustoverip.com/context/profiles/v1/version",
+      "@type": "@id"
+    },
+    "operations_supported": {
+      "@id": "https://trustoverip.com/context/profiles/v1/operations_supported",
+      "@type": "@id",
+      "@context": {
+        "query": {
+          "@id": "https://trustoverip.com/context/profiles/v1/query",
+          "@type": "@id"
+        }
+      }
+    }
+  }
+}

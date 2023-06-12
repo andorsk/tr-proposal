@@ -1,0 +1,17 @@
+{
+  "@context": "https://trustoverip.com/context/trcontainer",
+  "source": "did:web:console.benri.io",
+  "audience_target": "did:me:example",
+  "th": 123456571236192487891237,
+  "mo": 0,
+  "parent": {
+    "*": {
+      "id": "did:example:parent"
+    }
+  },
+  "recieved": "12:00:00T2021-01-01Z",
+  "expiry": "12:00:00T2021-01-01Z",
+  "@context": "http://trustoverip.org/tr/basic_profile",
+  "path": "$.queries.trustregistry",
+  "data": "bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi"
+}
